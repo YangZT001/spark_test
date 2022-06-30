@@ -22,7 +22,6 @@ object Spark03_SparkSQL_UDAF2 {
         ds.select(udafClo).show()
 
         spark.close()
-
     }
     case class User(var name:String,age:Long)
     case class Buff(var total:Long,var count:Long)
