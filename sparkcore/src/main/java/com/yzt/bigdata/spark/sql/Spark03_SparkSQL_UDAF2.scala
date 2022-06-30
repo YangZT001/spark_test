@@ -28,9 +28,9 @@ object Spark03_SparkSQL_UDAF2 {
   /***
      * 自定义聚合函数类，计算平均值
      * 1.继承Aggregator，定义泛型
-   * IN : 输入类型
-   * BUF : 缓冲区数据类型
-   * OUT : 输出类型
+     * IN : 输入类型
+     * BUF : 缓冲区数据类型
+     * OUT : 输出类型
      * 2.重写方法
      */
     class MyAvg extends Aggregator[User,Buff,Long]{
